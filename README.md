@@ -1,4 +1,4 @@
-# Duplicate MRN Analysis Project
+# Superstore Retail Analytics Project
 
 ![Google Slides](https://img.shields.io/badge/GOOGLE%20SLIDES-yellow?style=for-the-badge)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
