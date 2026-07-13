@@ -1,4 +1,4 @@
-# Superstore Retail SQL Showcase
+# Retail Product Dataset With Missing Values - SQL Showcase
 
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 ![SQLite](https://img.shields.io/badge/sqlite-%2300f.svg?style=for-the-badge&logo=sqlite&logoColor=white)
@@ -32,17 +32,18 @@ After creating the cleaned table, two verification checks were run to confirm th
 
 - Row count check: confirmed synthetic_dataset_clean has the same number of rows as the original table, meaning no data was accidentally dropped.
 
+![SQL Picture](assets/sql4.png)
+
 - Remaining nulls check: confirmed that Category, Price, Stock, and Discount had zero missing values post-cleaning, and that Rating was the only column still showing missing values (2,050, matching the original count) as expected, since it was intentionally left untouched.
+
+![SQL Picture](assets/sql5.png)
 
 Full SQL for this process is available in sql/data.sql.
 
+## Business Questions & Analysis
 
+This section outlines the key business questions explored using SQL, along with the queries used to answer them and the insights gathered from the cleaned dataset.
 
-## Future Enhancements
-
-Here are some ideas I would explore if I kept building this project further:
-
-- 
 
 ## Contact Information
 
