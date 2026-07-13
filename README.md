@@ -7,17 +7,18 @@
 ![SQL Picture](assets/sql-pic.png)
 
 ---
-## Problem Description
 
+## Business Problem
+
+A retail company wants to better understand its product catalog, including pricing trends, customer ratings, inventory availability, and discount strategies, to identify opportunities for improving sales performance and product positioning. This SQL analysis explores key business questions such as category pricing differences, rating trends, discount patterns, and inventory relationships.
 
 ## Dataset Information
 
+The dataset used in this project can be found in data/, and was originally sourced from [Kaggle](https://www.kaggle.com/datasets/himelsarder/retail-product-dataset-with-missing-values). It contains missing values across several fields, including Category (~63% missing), Price (~4%), Rating (~47%), Stock (~31%), and Discount (~9%). This analysis treats data quality as part of the process by identifying, measuring, and appropriately handling incomplete records to ensure accurate insights and reflect real-world analyst workflows.
+
+## Data Cleaning
 
 
-## Problem Statement
-
-
-## Design Rationale
 
 
 
