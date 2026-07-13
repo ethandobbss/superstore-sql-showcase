@@ -45,11 +45,48 @@ Full SQL for this process is available in sql/data.sql.
 This section outlines the key business questions explored using SQL, along with the queries used to answer them and the insights gathered from the cleaned dataset.
 
 
+### 1. Which product categories generate the highest average price?
+
+```sql
+SELECT Category, AVG(Price) AS avg_price
+FROM synthetic_dataset_clean
+GROUP BY Category
+ORDER BY avg_price DESC;
+```
+
+**Findings:** Category B generates the highest avg price at ~$5,401
+
+### 2. Which categories have the highest avg consumer rating?
+
+```sql
+SELECT Category, AVG(Rating) AS avg_rating
+FROM synthetic_dataset_clean
+WHERE Rating IS NOT NULL
+GROUP BY Category
+ORDER BY avg_rating DESC;
+```
+
+**Findings:** Category D has the highest avg consumer rating at 3.12
+
+### 3. Compare original vs clean data side by side
+
+```sql
+SELECT 
+  raw.Category AS original_category,
+  clean.Category AS cleaned_category
+FROM synthetic_dataset raw
+INNER JOIN synthetic_dataset_clean clean
+ON raw.rowid = clean.rowid;
+```
+
+**Findings:** No null values in the cleaned_category column
+
+
 ## Contact Information
 
 You can contact me via email at [ethan-jacob@comcast.net](mailto:ethan-jacob@comcast.net) or connect with me on [LinkedIn](https://www.linkedin.com/in/ethan-dobbs).
 
-Thank you for reviewing my Superstore Retail SQL Showcase! I hope this provides a clearer representation of my current SQL proficiency.
+Thank you for reviewing my 'Retail Product Dataset With Missing Values - SQL Showcase' project! I hope this provides a clearer representation of my current SQL proficiency.
 
 ## License
 
